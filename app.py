@@ -15,7 +15,7 @@ st.set_page_config(
 @st.cache_resource
 def load_model():
     try:
-        model = tf.keras.models.load_model('best_model.keras')
+        model = tf.keras.models.load_model('mobilenetv2_model.keras')
         with open('class_indices.json', 'r') as f:
             class_indices = json.load(f)
         # Reverse mapping from index to class name
